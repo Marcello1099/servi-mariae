@@ -32,6 +32,9 @@ jobs:
         run: |
           hugo --minify
 
+      - name: Disable Jekyll
+        run: touch built-site/.nojekyll
+
       - name: Deploy
         if: github.ref == 'refs/heads/main'
         run: |

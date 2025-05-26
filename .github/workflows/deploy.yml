@@ -24,24 +24,19 @@ jobs:
 
       - name: Setup Hugo
         run: |
-          curl -L -o /tmp/hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v0.111.3/hugo_extended_0.111.3_Linux-64bit.tar.gz
+          curl -L -o /tmp/hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v0.147.5/hugo_0.147.5_Linux-64bit.tar.gz
           tar -C $(RUNNER_TEMP) -zxvf /tmp/hugo.tar.gz hugo
-          sudo mv $(RUNNER_TEMP)/hugo /usr/local/bin/
 
       - name: Build
-        run: |
-          hugo --minify
-
-      - name: Disable Jekyll
-        run: touch built-site/.nojekyll
+        run: $(RUNNER_TEMP)/hugo
 
       - name: Deploy
         if: github.ref == 'refs/heads/main'
         run: |
-          cp -R public/* built-site/
-          cd built-site
-          git config --global user.name 'github-actions'
-          git config --global user.email 'github-actions@github.com'
+          cp -R public/* $(GITHUB_WORKSPACE)/built-site/
+          cd $(GITHUB_WORKSPACE)/built-site
           git add .
-          git commit -m 'Deploy site - $(date)'
+          git config user.name 'github-actions'
+          git config user.email 'github-actions@github.com'
+          git commit -m 'Updated site'
           git push

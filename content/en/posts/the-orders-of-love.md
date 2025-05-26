@@ -5,8 +5,6 @@ tags = ['Love', 'Catholic', 'Theology']
 title = 'The Orders of Love'
 +++
 
-# The Orders of Love
-
 The word "love" is a chameleon in the English language, shifting its meaning across contexts with remarkable ease. For example, it can be used as follows: "I love my parents," "I love my spouse," "I love pizza," "I love sports," or "I love God," yet each utterance carries a different weight and intention. This versatility, while expressive, can lead to ambiguity. Unlike English, which leans on a single word, ancient Greek employs three distinct terms—Eros, Philia, and Agape—to capture the nuances of love. In Catholic theology, these loves are not merely linguistic categories but reflections of God’s divine design for human relationships, each requiring boundaries to align with His will.
 
 ## Eros

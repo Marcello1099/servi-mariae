@@ -1,2 +1,15 @@
-public
-resources
+# Hugo build outputs
+public/
+resources/
+
+# Hugo build state
+.hugo_build.lock*
+
+# System & editor artifacts
+.DS_Store
+*.swp
+*.swo
+
+# Duplicate timestamped backup files created by editors
+.gitignore*
+!.gitignore

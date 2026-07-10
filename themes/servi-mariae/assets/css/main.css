@@ -247,7 +247,6 @@ img { max-width: 100%; height: auto; }
 .post-footer .avatar {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
 }
 .post-footer .name { color: var(--ink); font-weight: 500; }
 .post-footer .tags {

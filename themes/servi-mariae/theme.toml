@@ -1,0 +1,4 @@
+name = "servi-mariae"
+license = "MIT"
+description = "Catholic blog theme for ServiMariae"
+min_version = "0.120.0"

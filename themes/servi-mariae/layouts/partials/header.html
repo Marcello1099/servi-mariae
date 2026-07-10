@@ -1,0 +1,13 @@
+<header class="site-header">
+  <div class="inner">
+    <a href="{{ "/" | relURL }}" class="brand">
+      <img class="logo" src="{{ "avatar.png" | relURL }}" alt="ServiMariae">
+      <span>ServiMariae</span>
+    </a>
+    <nav class="nav">
+      {{- range site.Menus.main }}
+      <a href="{{ .URL }}"{{ if eq $.RelPermalink .URL }} class="active"{{ end }}>{{ .Name }}</a>
+      {{- end }}
+    </nav>
+  </div>
+</header>

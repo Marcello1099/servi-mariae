@@ -1,0 +1,27 @@
+{{ define "main" }}
+<article class="wrap">
+  <header class="post-header">
+    <p class="meta">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>
+    </p>
+    <h1>{{ .Title }}</h1>
+  </header>
+
+  <div class="post-content">
+    {{ .Content }}
+  </div>
+
+  {{- $a := site.Params.author -}}
+  {{- if or $a .Params.tags -}}
+  <footer class="post-footer">
+    {{- with $a -}}
+    <img class="avatar" src="{{ .avatar | relURL }}" alt="">
+    <span class="name">{{ .name }}</span>
+    {{- end -}}
+    {{- with .Params.tags -}}
+    <span class="tags">{{ range . }}<span>{{ . }}</span> {{ end }}</span>
+    {{- end -}}
+  </footer>
+  {{- end -}}
+</article>
+{{ end }}

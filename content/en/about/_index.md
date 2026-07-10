@@ -1,6 +1,6 @@
 +++
 title = 'About'
-date = '2025-05-10T20:54:49+02:00'
+date = '2026-07-11T20:54:49+02:00'
 draft = false
 +++
 
@@ -13,7 +13,7 @@ Posts here draw on Scripture, the Church Fathers, the saints, and
 contemporary Catholic writers. The aim is not novelty but clarity: to
 read the deposit of faith with the mind of the Church, and to live it.
 
-> *Beati mundo corde, quoniam ipsi Deum videbunt.* — Mt 5:8
+> *Filii, date mihi cor vestrum, et oculi vestri vias meas custodiant.*
 
 ---
 
@@ -31,4 +31,4 @@ read the deposit of faith with the mind of the Church, and to live it.
   </div>
 </div>
 
-Corrections and correspondence welcome. *Ad Iesum per Mariam.*
+Corrections and correspondence welcome.

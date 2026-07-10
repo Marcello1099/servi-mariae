@@ -13,3 +13,4 @@ resources/
 # Duplicate timestamped backup files created by editors
 .gitignore*
 !.gitignore
+*/__pycache__/*

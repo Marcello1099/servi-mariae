@@ -32,5 +32,3 @@ read the deposit of faith with the mind of the Church, and to live it.
     </a>
   </div>
 </div>
-
-Corrections and correspondence welcome.

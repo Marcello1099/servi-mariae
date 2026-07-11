@@ -1,0 +1,15 @@
+{{ $posts := where .Pages "Section" "posts" }}
+{{ $sorted := $posts.ByDate.Reverse }}
+{{ if $sorted }}
+<ul class="posts">
+  {{ range $sorted }}
+    <li>
+      <p class="meta">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>
+      </p>
+      <a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <p class="summary">{{ with .Description }}{{ . }}{{ else }}{{ .Plain | htmlUnescape | truncate 180 }}{{ end }}</p>
+    </li>
+  {{ end }}
+</ul>
+{{ end }}

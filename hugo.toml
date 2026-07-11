@@ -3,7 +3,6 @@ baseURL = 'https://marcello1099.github.io/servi-mariae/'
 
 languageCode = 'en-us'
 defaultContentLanguage = "en-gb"
-enableEmoji = true
 
 theme = "servi-mariae"
 
@@ -36,7 +35,6 @@ theme = "servi-mariae"
     url = '/posts/'
     weight = 20
   [[Languages.en-gb.menu.main]]
-    pageRef = "about"
     name = 'About'
     url = '/about/'
     weight = 30
@@ -50,10 +48,8 @@ theme = "servi-mariae"
     name = "ServiMariae"
     description = "Catholic reflections — Ad Iesum per Mariam"
 
-[Languages.en-gb.params.webmanifest]
-  name = "ServiMariae"
-  short_name = "ServiMariae"
-  start_url = "/"
-  theme_color = "#1d3a8a"
-  background_color = "#fbf7f0"
-  display = "standalone"
+  [Languages.en-gb.params.authors]
+    [Languages.en-gb.params.authors.marcello]
+      name = "Marcello Mariani"
+      avatar = "authors/marcello.jpg"
+      url = "https://www.linkedin.com/in/marcello-mariani-m/"

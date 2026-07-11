@@ -1,9 +1,5 @@
 {{ define "main" }}
-<section class="hero wrap">
-  <img class="emblem" src="{{ "avatar.png" | relURL }}" alt="ServiMariae">
-  <h1>{{ .Title }}</h1>
-  {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
-</section>
+{{ partial "page-hero.html" (dict "title" .Title "lede" .Description) }}
 
 {{ if .Content }}
 <div class="wrap post-content">{{ .Content }}</div>

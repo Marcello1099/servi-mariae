@@ -286,13 +286,7 @@ img { max-width: 100%; height: auto; }
   color: #fff;
 }
 
-/* about */
-.about { padding: 4rem 0 1rem; text-align: center; }
-.about .emblem {
-  width: 100px;
-  height: auto;
-  margin-bottom: 1.5rem;
-}
+/* author */
 .author {
   display: flex;
   align-items: center;
@@ -336,25 +330,6 @@ img { max-width: 100%; height: auto; }
 .author-meta .social:hover svg { transform: scale(1.08); }
 @media (prefers-color-scheme: dark) {
   .author-meta .social svg { color: #8aa6ff; }
-}
-.about h1 {
-  font-size: 2.2rem;
-  font-weight: 400;
-  margin: 0 0 0.8rem;
-  letter-spacing: -0.022em;
-}
-.about p {
-  color: var(--ink-soft);
-  max-width: 32em;
-  margin: 0 auto 1rem;
-}
-.about blockquote {
-  border: none;
-  padding: 0;
-  text-align: center;
-  font-style: italic;
-  color: var(--muted);
-  margin-top: 2rem;
 }
 
 /* footer */

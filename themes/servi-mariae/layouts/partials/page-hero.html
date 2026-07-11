@@ -1,0 +1,7 @@
+{{- $title := .title | default site.Title -}}
+<section class="hero wrap">
+  <img class="emblem" src="{{ "avatar.png" | relURL }}" alt="ServiMariae">
+  <h1>{{ $title }}</h1>
+  {{ with .lede }}<p class="lede">{{ . }}</p>{{ end }}
+  {{ with .tagline }}<p class="tagline">{{ . }}</p>{{ end }}
+</section>

@@ -1,7 +1,7 @@
 .PHONY: serve build clean
 
 serve:
-	hugo server -D --bind 0.0.0.0 --baseURL / --disableFastRender
+	exec hugo server -D --bind 0.0.0.0 --port 1313 --baseURL / --disableFastRender
 
 build:
 	hugo --minify --baseURL https://marcello1099.github.io/servi-mariae/

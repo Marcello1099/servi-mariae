@@ -1,4 +1,5 @@
 +++
+author = 'marcello'
 date = '2025-05-10T20:54:49+02:00'
 draft = false
 tags = ['Love', 'Catholic', 'Theology']
@@ -32,4 +33,4 @@ The Rule of St. Benedict, with its emphasis on discipline, hospitality, and mutu
 Eros, philia, and agape are distinct yet complementary loves, each reflecting a facet of the infinite love from God. Eros binds spouses in passionate unity, agape mirrors the sacrificial charity from Christ, and philia fosters virtuous friendship within the Church. Ordered by boundaries, these loves align with the plan from God, transforming relationships into expressions of divine grace. In the Catholic vision, all love finds its source in God, perfected through prayer, sacraments, and virtuous living. Readers are called to cultivate holy love by applying boundaries in their relationships, ensuring love serves its divine purpose. Ordered love not only draws Catholics closer to God but also builds a world radiant with His love, fulfilling the truth that “God is love.”
 
 # Sources
-- Sheen, F. J. Family Retreat (9 of 12) - Three Kinds of Love
+- Sheen, F. J., Venerable. - Three Kinds of Love

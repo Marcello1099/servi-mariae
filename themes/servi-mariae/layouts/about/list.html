@@ -1,0 +1,9 @@
+{{ define "main" }}
+<section class="about wrap">
+  <img class="emblem" src="{{ "avatar.png" | relURL }}" alt="ServiMariae">
+  <h1>{{ .Title }}</h1>
+  {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+</section>
+
+<div class="wrap post-content">{{ .Content }}</div>
+{{ end }}

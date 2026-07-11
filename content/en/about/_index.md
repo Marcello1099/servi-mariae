@@ -13,7 +13,7 @@ Posts here draw on Scripture, the Church Fathers, the saints, and
 contemporary Catholic writers. The aim is not novelty but clarity: to
 read the deposit of faith with the mind of the Church, and to live it.
 
-> *Filii, date mihi cor vestrum, et oculi vestri vias meas custodiant.*
+> *Praebe, fili mi, cor tuum mihi, et oculi tui vias meas custodiant.*
 
 ---
 

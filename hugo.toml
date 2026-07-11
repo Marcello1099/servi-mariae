@@ -40,7 +40,7 @@ theme = "servi-mariae"
     weight = 30
 
 [Languages.en-gb.params]
-  description = "A Catholic."
+  description = "A Catholic journal."
   mainSections = ['posts']
 
   [Languages.en-gb.params.author]

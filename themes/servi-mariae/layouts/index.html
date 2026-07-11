@@ -8,7 +8,7 @@
 
 <div class="wrap">
   {{ partial "posts-list.html" . }}
-  {{ if not (where .Pages "Section" "posts") }}
+  {{ if not (where site.RegularPages "Section" "posts") }}
     <p style="text-align:center;color:var(--muted);">No posts yet.</p>
   {{ end }}
 </div>

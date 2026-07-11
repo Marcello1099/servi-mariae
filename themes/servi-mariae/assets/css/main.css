@@ -30,7 +30,7 @@ html { font-size: 17px; -webkit-text-size-adjust: 100%; }
 
 body {
   margin: 0;
-  font-family: "Fraunces", "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
   font-feature-settings: "liga", "kern", "onum";
   font-optical-sizing: auto;
   line-height: 1.7;

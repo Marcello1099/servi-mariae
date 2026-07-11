@@ -1,4 +1,4 @@
-{{ $posts := where .Pages "Section" "posts" }}
+{{ $posts := where site.RegularPages "Section" "posts" }}
 {{ $sorted := $posts.ByDate.Reverse }}
 {{ if $sorted }}
 <ul class="posts">

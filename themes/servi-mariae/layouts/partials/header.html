@@ -7,14 +7,13 @@
     <nav class="nav">
       {{- range site.Menus.main }}
       <a href="{{ .URL }}"{{ if eq $.RelPermalink .URL }} class="active"{{ end }}>{{ .Name }}</a>
-      {{- end }}
-    </nav>
-    {{- if gt (len .AllTranslations) 1 -}}
-    <nav class="lang-switch" aria-label="Language">
+      {{- end -}}
+      {{- if gt (len .AllTranslations) 1 -}}
+      <span class="sep" aria-hidden="true"></span>
       {{- range .AllTranslations -}}
-      <a href="{{ .RelPermalink }}"{{ if eq .Language.Lang $.Language.Lang }} class="active"{{ end }}>{{ .Language.LanguageName }}</a>
+      <a class="lang{{ if eq .Language.Lang $.Language.Lang }} active{{ end }}" href="{{ .RelPermalink }}" hreflang="{{ .Language.Lang }}" lang="{{ .Language.Lang }}">{{ index (split .Language.Lang "-") 0 | upper }}</a>
+      {{- end -}}
       {{- end -}}
     </nav>
-    {{- end -}}
   </div>
 </header>

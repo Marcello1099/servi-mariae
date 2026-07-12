@@ -72,6 +72,10 @@ theme = "servi-mariae"
     name = 'Publicaciones'
     url = '/es-es/posts/'
     weight = 20
+  [[Languages.es-es.menu.main]]
+    name = 'Acerca de'
+    url = '/es-es/about/'
+    weight = 30
 
   [Languages.es-es.params]
     description = "Una revista católica."

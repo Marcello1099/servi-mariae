@@ -4,7 +4,7 @@
 <div class="wrap">
   {{ partial "posts-list.html" . }}
   {{ if not (where site.RegularPages "Section" "posts") }}
-    <p style="text-align:center;color:var(--muted);">No posts yet.</p>
+    <p style="text-align:center;color:var(--muted);">{{ i18n "no-posts" }}</p>
   {{ end }}
 </div>
 {{ end }}

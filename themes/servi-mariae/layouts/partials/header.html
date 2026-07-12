@@ -12,7 +12,7 @@
     {{- $translations := .AllTranslations -}}
     {{- if not $translations -}}{{- $translations = site.Home.AllTranslations -}}{{- end -}}
     {{- if gt (len $translations) 1 -}}
-    <nav class="lang-switch" aria-label="Language">
+    <nav class="lang-switch" aria-label="{{ i18n "language" | default "Language" }}">
       {{- range $translations -}}
       <a href="{{ .RelPermalink }}"{{ if eq .Language.Lang $.Language.Lang }} class="active"{{ end }}>{{ .Language.LanguageName }}</a>
       {{- end -}}

@@ -1,0 +1,20 @@
+[home]
+other = "Home"
+
+[posts]
+other = "Posts"
+
+[about]
+other = "About"
+
+[authors-heading]
+other = "Authors"
+
+[role-editor]
+other = "Editor & writer"
+
+[no-posts]
+other = "No posts yet."
+
+[back-to-top]
+other = "Back to top"

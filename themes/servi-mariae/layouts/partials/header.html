@@ -1,6 +1,7 @@
 <header class="site-header">
   <div class="inner">
-    <a href="{{ "/" | relURL }}" class="brand">
+    {{- $brand := index (where site.Home.AllTranslations "Language.Lang" .Language.Lang) 0 -}}
+    <a href="{{ $brand.RelPermalink }}" class="brand">
       <img class="logo" src="{{ "avatar.png" | relURL }}" alt="ServiMariae">
       <span>ServiMariae</span>
     </a>

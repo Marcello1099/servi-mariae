@@ -8,9 +8,10 @@
       {{- range site.Menus.main }}
       <a href="{{ .URL }}"{{ if eq $.RelPermalink .URL }} class="active"{{ end }}>{{ .Name }}</a>
       {{- end -}}
-      {{- if gt (len site.Home.AllTranslations) 1 -}}
+      {{- $translations := .AllTranslations -}}
+      {{- if gt (len $translations) 1 -}}
       <span class="sep" aria-hidden="true"></span>
-      {{- range site.Home.AllTranslations -}}
+      {{- range $translations -}}
       <a class="lang{{ if eq .Language.Lang $.Language.Lang }} active{{ end }}" href="{{ .RelPermalink }}" hreflang="{{ .Language.Lang }}" lang="{{ .Language.Lang }}">{{ index (split .Language.Lang "-") 0 | upper }}</a>
       {{- end -}}
       {{- end -}}

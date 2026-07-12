@@ -1,15 +1,3 @@
-[home]
-other = "Inicio"
-
-[posts]
-other = "Publicaciones"
-
-[about]
-other = "Acerca de"
-
-[authors-heading]
-other = "Autores"
-
 [role-editor]
 other = "Editor y escritor"
 

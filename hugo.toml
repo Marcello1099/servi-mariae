@@ -7,14 +7,8 @@ defaultContentLanguage = "en-gb"
 theme = "servi-mariae"
 
 [markup]
-  [markup.highlight]
-    noClasses = false
   [markup.goldmark.renderer]
     unsafe = true
-  [markup.tableOfContents]
-    startLevel = 2
-    endLevel = 4
-    ordered = false
 
 ############################## English language ################################
 [Languages.en-gb]
@@ -42,11 +36,6 @@ theme = "servi-mariae"
 [Languages.en-gb.params]
   description = "A Catholic journal."
   mainSections = ['posts']
-
-  [Languages.en-gb.params.author]
-    avatar = "avatar.png"
-    name = "ServiMariae"
-    description = "Catholic reflections — Ad Iesum per Mariam"
 
   [Languages.en-gb.params.authors]
     [Languages.en-gb.params.authors.marcello]

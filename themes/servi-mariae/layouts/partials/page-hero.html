@@ -1,7 +1,8 @@
 {{- $title := .title | default site.Title -}}
 <section class="hero wrap">
-  <img class="emblem" src="{{ "avatar.png" | relURL }}" alt="ServiMariae">
+  {{- if not .meta -}}<img class="emblem" src="{{ "avatar.png" | relURL }}" alt="ServiMariae">{{- end -}}
+  {{- with .meta -}}<p class="meta">{{ . | safeHTML }}</p>{{- end -}}
   <h1>{{ $title }}</h1>
-  {{ with .lede }}<p class="lede">{{ . }}</p>{{ end }}
-  {{ with .tagline }}<p class="tagline">{{ . }}</p>{{ end }}
+  {{- with .lede -}}<p class="lede">{{ . }}</p>{{- end -}}
+  {{- with .tagline -}}<p class="tagline">{{ . }}</p>{{- end -}}
 </section>

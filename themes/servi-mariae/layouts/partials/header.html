@@ -8,11 +8,13 @@
       {{- range site.Menus.main }}
       <a href="{{ .URL }}"{{ if eq $.RelPermalink .URL }} class="active"{{ end }}>{{ .Name }}</a>
       {{- end -}}
-      {{- $translations := .AllTranslations -}}
+      {{- $translations := site.Home.AllTranslations -}}
       {{- if gt (len $translations) 1 -}}
       <span class="sep" aria-hidden="true"></span>
       {{- range $translations -}}
-      <a class="lang{{ if eq .Language.Lang $.Language.Lang }} active{{ end }}" href="{{ .RelPermalink }}" hreflang="{{ .Language.Lang }}" lang="{{ .Language.Lang }}">{{ index (split .Language.Lang "-") 0 | upper }}</a>
+      {{- $match := index (where $.AllTranslations "Language.Lang" .Language.Lang) 0 -}}
+      {{- $url := $match.RelPermalink | default .RelPermalink -}}
+      <a class="lang{{ if eq .Language.Lang $.Language.Lang }} active{{ end }}" href="{{ $url }}" hreflang="{{ .Language.Lang }}" lang="{{ .Language.Lang }}">{{ index (split .Language.Lang "-") 0 | upper }}</a>
       {{- end -}}
       {{- end -}}
     </nav>

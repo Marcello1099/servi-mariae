@@ -1,3 +1,12 @@
++++
+author = 'marcello'
+date = '2026-07-12T00:00:00+02:00'
+draft = false
+tags = ['Amor', 'Vocación', 'Confianza', 'Catolicismo']
+title = 'La pradera del alma: reflexiones sobre el amor, la vocación y la confianza en Dios'
++++
+
+![Un jinete solitario cruza una pradera al amanecer bajo un cielo dorado.](/images/the-meadow-of-the-soul.jpg)
 
 # La pradera del alma: reflexiones sobre el amor, la vocación y la confianza en Dios
 

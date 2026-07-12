@@ -53,3 +53,20 @@ theme = "servi-mariae"
       name = "Marcello Mariani"
       avatar = "authors/marcello.jpg"
       url = "https://www.linkedin.com/in/marcello-mariani-m/"
+
+############################## Spanish language ################################
+[Languages.es-es]
+  languageName = "Español"
+  languageCode = "es-es"
+  contentDir = "content/es"
+  weight = 2
+
+  [Languages.es-es.params]
+    description = "Una revista católica."
+    mainSections = ['posts']
+
+    [Languages.es-es.params.authors]
+      [Languages.es-es.params.authors.marcello]
+        name = "Marcello Mariani"
+        avatar = "authors/marcello.jpg"
+        url = "https://www.linkedin.com/in/marcello-mariani-m/"

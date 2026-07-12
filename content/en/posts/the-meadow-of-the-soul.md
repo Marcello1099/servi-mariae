@@ -1,3 +1,13 @@
++++
+author = 'marcello'
+date = '2026-07-12T00:00:00+02:00'
+draft = false
+tags = ['Love', 'Vocation', 'Trust', 'Catholic']
+title = 'The Meadow of the Soul: Reflections on Love, Vocation, and Trust in God'
++++
+
+![A lone rider crosses a meadow at dawn under a gold-tinted sky.](/images/the-meadow-of-the-soul.jpg)
+
 # The Meadow of the Soul: Reflections on Love, Vocation, and Trust in God
 
 ## The Rider Before the Dawn

@@ -61,6 +61,18 @@ theme = "servi-mariae"
   contentDir = "content/es"
   weight = 2
 
+  [Languages.es-es.menu]
+  [[Languages.es-es.menu.main]]
+    pageRef = "/"
+    name = 'Inicio'
+    url = '/es-es/'
+    weight = 10
+  [[Languages.es-es.menu.main]]
+    pageRef = "posts"
+    name = 'Publicaciones'
+    url = '/es-es/posts/'
+    weight = 20
+
   [Languages.es-es.params]
     description = "Una revista católica."
     mainSections = ['posts']

@@ -9,5 +9,14 @@
       <a href="{{ .URL }}"{{ if eq $.RelPermalink .URL }} class="active"{{ end }}>{{ .Name }}</a>
       {{- end }}
     </nav>
+    {{- $translations := .AllTranslations -}}
+    {{- if not $translations -}}{{- $translations = site.Home.AllTranslations -}}{{- end -}}
+    {{- if gt (len $translations) 1 -}}
+    <nav class="lang-switch" aria-label="Language">
+      {{- range $translations -}}
+      <a href="{{ .RelPermalink }}"{{ if eq .Language.Lang $.Language.Lang }} class="active"{{ end }}>{{ .Language.LanguageName }}</a>
+      {{- end -}}
+    </nav>
+    {{- end -}}
   </div>
 </header>
